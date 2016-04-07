@@ -49,12 +49,12 @@ var drumPic = document.getElementById("drumkitImage");
 console.log("drumPic = " + drumPic.alt);
 console.log("drumPic width = " + drumPic.width);
 var grow = function () {
-  drumPic.width += 10;
+  drumPic.width += 1;
   if (drumPic.width === 300) {
     window.clearInterval(growInterval); 
   }
 };
-var growInterval = window.setInterval(grow, 1000);
+var growInterval = window.setInterval(grow, 500);
 </script>
 </body>
 </html>
