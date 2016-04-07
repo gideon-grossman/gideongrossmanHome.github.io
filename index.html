@@ -9,6 +9,10 @@
 <script>
 var title = document.getElementById("title");
 console.log("title = " + title);
+var colorIt = function() {
+	title.style.color = "rgb(0, 255, 0)";
+}
+title.addEventListener('click', colorIt);
 </script>
 </body>
 </html>
