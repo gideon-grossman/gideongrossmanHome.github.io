@@ -2,9 +2,6 @@
 <html>
 <head>
 	<style>
-	#drumkitImage {
-	  width: 100px;
-	}
 
 	.staff {
 	  position: relative;
@@ -48,13 +45,20 @@ title.addEventListener('click', colorIt);
 var drumPic = document.getElementById("drumkitImage");
 console.log("drumPic = " + drumPic.alt);
 console.log("drumPic width = " + drumPic.width);
+
+var startTime = new Date().getTime();
+console.log("startTime = "+startTime);
 var grow = function () {
-  drumPic.width += 1;
-  if (drumPic.width === 300) {
-    window.clearInterval(growInterval); 
+  var currTime = new Date().getTime();
+  var newWidth = 10 + ((currTime - startTime) / 1000) * 30;
+  console.log("drumPic.width = " + drumPic.width);
+  if (drumPic.width < 200){
+  drumPic.style.width = newWidth + "px";
+    console.log("drumPic.style.width = " + drumPic.style.width);
+  window.requestAnimationFrame(grow);
   }
 };
-var growInterval = window.setInterval(grow, 500);
+grow();
 </script>
 </body>
 </html>
