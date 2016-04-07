@@ -73,7 +73,7 @@ var startTime = new Date().getTime();
 console.log("startTime = "+startTime);
 var grow = function () {
   var currTime = new Date().getTime();
-  var newWidth = 10 + ((currTime - startTime) / 1000) * 30;
+  var newWidth = 10 + ((currTime - startTime) / 1000) * 100;
   console.log("drumPic.width = " + drumPic.width);
   if (drumPic.width < 200){
   drumPic.style.width = newWidth + "px";
