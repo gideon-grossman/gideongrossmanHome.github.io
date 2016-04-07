@@ -2,14 +2,19 @@
 <html>
 <head>
 	<style>
+	#drumkitImage {
+	  width: 100px;
+	}
 
 	.staff {
+	  visibility: hidden;
 	  position: relative;
 	  width: 30px;
 	  bottom: 0px;
 	}
 
 	.snareNote {
+	  visibility: hidden;
 	  position: absolute;
 	  bottom: 25px;
 	  left: 50px;
@@ -40,6 +45,16 @@ var colorIt = function() {
 };
 title.addEventListener('click', colorIt);
 
+var staff = document.getElementsByClassName("staff")[0];
+console.log("staff = " + staff);
+var snareNote = document.getElementsByClassName("snareNote")[0];
+
+var showSheetMusic = function() {
+  staff.style.visibility = 'visible';
+  snareNote.style.visibility = 'visible';
+};
+
+title.addEventListener('click', showSheetMusic);
 
 //Drum kit image grow
 var drumPic = document.getElementById("drumkitImage");
@@ -59,6 +74,8 @@ var grow = function () {
   }
 };
 grow();
+
+
 </script>
 </body>
 </html>
