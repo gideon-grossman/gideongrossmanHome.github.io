@@ -6,17 +6,41 @@
   visibility: hidden;
   position: relative;
   width: 30px;
-  bottom: -30px;
+  bottom: 0px;
 }
 
 .snareNote {
   visibility: hidden;
   position: absolute;
-  bottom: 25px;
+  bottom: 23px;
   left: 50px;
   z-index: -1
 }
 
+.note2 {
+  visibility: hidden;
+  position: absolute;
+  bottom: 23px;
+  left: 100px;
+  z-index: -1
+}
+
+.note3 {
+  visibility: hidden;
+  position: absolute;
+  bottom: 23px;
+  left: 150px;
+  z-index: -1
+}
+
+.note4 {
+  visibility: hidden;
+  position: absolute;
+  bottom: 23px;
+  left: 200px;
+  z-index: -1
+}
+
 .noteImage {
-  width: 90px;
+  width: 60px;
 }

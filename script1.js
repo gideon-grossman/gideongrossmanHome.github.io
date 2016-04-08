@@ -12,21 +12,34 @@ title.addEventListener('click', colorIt);
 var staff = document.getElementsByClassName("staff")[0];
 console.log("staff = " + staff);
 var snareNote = document.getElementsByClassName("snareNote")[0];
+var note2 = document.getElementsByClassName("note2")[0];
+var note3 = document.getElementsByClassName("note3")[0];
+var note4 = document.getElementsByClassName("note4")[0];
 
 var showSheetMusic = function() {
   staff.style.visibility = 'visible';
+showNotes();
+};
 
+var showNotes = function(){
+  chooseNote(snareNote);
+  chooseNote(note2);
+    chooseNote(note3);
+    chooseNote(note4);
+};
+
+var chooseNote = function( note){
   var drumToHit = whichDrum();
   if (drumToHit === "none"){
-    snareNote.style.visibility = 'hidden';
+    note.style.visibility = 'hidden';
   }
   else {
-      snareNote.style.visibility = 'visible';
+ note.style.visibility = 'visible';
     if (drumToHit === "snareDrum") {
-  snareNote.style.bottom = "72px";
+  note.style.bottom = "72px";
   }
   else if (drumToHit === "baseDrum"){
-    snareNote.style.bottom = "23px";
+    note.style.bottom = "23px";
   }
   }
 };
