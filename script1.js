@@ -106,7 +106,6 @@ var randomIntGenerator = function(){
   return answer;
 };
 
-})
 //chooses which drum or no drum to hit
 var whichDrum = function() {
   var randomInt = randomIntGenerator();
