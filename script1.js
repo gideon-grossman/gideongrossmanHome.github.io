@@ -94,6 +94,11 @@ var grow = function () {
 grow();
 */
 $("#drumkitImage").hide().show("slow");
+$("#title").click(function(){
+	$(document).append("<div>Hello!</div>");
+	$(this).remove();
+	});
+	
 //generates a random integer
 var randomIntGenerator = function(){
   var answer = Math.floor(Math.random()*3);
@@ -101,6 +106,7 @@ var randomIntGenerator = function(){
   return answer;
 };
 
+})
 //chooses which drum or no drum to hit
 var whichDrum = function() {
   var randomInt = randomIntGenerator();
