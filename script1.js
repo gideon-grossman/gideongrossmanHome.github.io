@@ -10,42 +10,71 @@ title.addEventListener('click', colorIt);
 
 //Show sheet music when click "Create a beat"
 var staff = document.getElementsByClassName("staff")[0];
-console.log("staff = " + staff);
-var snareNote = document.getElementsByClassName("snareNote")[0];
-var note2 = document.getElementsByClassName("note2")[0];
-var note3 = document.getElementsByClassName("note3")[0];
-var note4 = document.getElementsByClassName("note4")[0];
+var note1 = document.getElementsByClassName("musicalNote")[0];
+var note2 = document.getElementsByClassName("musicalNote")[1];
+var note3 = document.getElementsByClassName("musicalNote")[2];
+var note4 = document.getElementsByClassName("musicalNote")[3];
 
 var showSheetMusic = function() {
   staff.style.visibility = 'visible';
-showNotes();
+  for (var i = 0; i < 4; i++){
+      chooseNote(i);
+  }
 };
 
+var spaceNotes = function() {
+  var notes = [note1, note2, note3, note4];
+  for (var i = 0; i < notes.length; i++){
+    notes[i].style.left = parseFloat(notes[i].style.left) +50 +"px";
+ console.og("note"+i+"style.left = "+notes[i].stye.left);
+  }
+};
 var showNotes = function(){
-  chooseNote(snareNote);
+  chooseNote(note1);
   chooseNote(note2);
     chooseNote(note3);
     chooseNote(note4);
 };
 
-var chooseNote = function( note){
+
+var chooseNote = function(beat){
   var drumToHit = whichDrum();
-  if (drumToHit === "none"){
-    note.style.visibility = 'hidden';
-  }
-  else {
- note.style.visibility = 'visible';
-    if (drumToHit === "snareDrum") {
-  note.style.bottom = "72px";
-  }
-  else if (drumToHit === "baseDrum"){
-    note.style.bottom = "23px";
-  }
+  if (drumToHit !== "none"){
+    var ElementExists = document.getElementById('beat'+beat);
+    var thisNote;
+    if (ElementExists){
+      thisNote = ElementExists;
+      console.log("Element for beat "+beat+"Exists and is called " +ElementExists.id);
+    }
+    else {
+      console.log("Element does not exist");
+      thisNote = document.createElement('div');
+    thisNote.id = 'beat'+beat;
+    console.log("thisNote's id = "+ thisNote.id);
+    thisNote.style.zIndex = '-1';
+    thisNote.style.position= 'absolute';
+     var thisNoteImage = document.createElement('img');
+      thisNoteImage.setAttribute('class','noteImage');
+   thisNote.appendChild(thisNoteImage);
+    }
+    if (drumToHit === "baseDrum"){
+          thisNote.style.bottom = '23px';
+    }
+    else if (drumToHit === "snareDrum") {
+      thisNote.style.bottom = '50px';
+    }
+    var distanceFromLeft = 50+beat*50;
+    console.log("distancefromleft = " +distanceFromLeft);
+    console.log("beat = "+beat);
+    thisNote.style.left = distanceFromLeft +'px';
+    console.log("thisNote.style.left = "+ thisNote.style.left);
+ document.getElementsByClassName('staff')[0].appendChild(thisNote);
   }
 };
 
 title.addEventListener('click', showSheetMusic);
 
+/*
 //Drum kit image grow
 var drumPic = document.getElementById("drumkitImage");
 console.log("drumPic = " + drumPic.alt);
@@ -63,7 +92,7 @@ var grow = function () {
   }
 };
 grow();
-
+*/
 //generates a random integer
 var randomIntGenerator = function(){
   var answer = Math.floor(Math.random()*3);
