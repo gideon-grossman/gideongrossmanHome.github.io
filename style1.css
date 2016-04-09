@@ -6,7 +6,6 @@
 
 body {
   background-color: white;
-margin: auto;
 }
 
 .staff {
@@ -27,4 +26,8 @@ margin: auto;
 .noteImage {
   content: url("http://www.clipartguide.com/_small/0808-0710-3112-3855.jpg");
   width: 60px;
+}
+
+#title {
+	margin: auto;
 }

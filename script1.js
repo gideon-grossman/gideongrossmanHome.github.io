@@ -93,10 +93,10 @@ var grow = function () {
 };
 grow();
 */
-$("#drumkitImage").hide().show("slow");
-$("#title").click(function(){
-	$(this).append("<div>Hello!</div>");
-	});
+// $("#drumkitImage").hide().show("slow");
+// $("#title").click(function(){
+// 	$(this).append("<div>Hello!</div>");
+// 	});
 	
 //generates a random integer
 var randomIntGenerator = function(){
