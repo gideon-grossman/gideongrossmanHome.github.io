@@ -93,7 +93,7 @@ var grow = function () {
 };
 grow();
 */
-// $("#drumkitImage").hide().show("slow");
+$("#drumkitImage").hide().show("slow");
 // $("#title").click(function(){
 // 	$(this).append("<div>Hello!</div>");
 // 	});
