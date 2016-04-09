@@ -93,11 +93,7 @@ var grow = function () {
 };
 grow();
 */
-$(document).ready( function () {
-  //Hide Warning
-  $( "#drumkitImage" ).hide().show( "slow", "linear" );
-
-});
+$("#drumkitImage").hide().show("slow");
 //generates a random integer
 var randomIntGenerator = function(){
   var answer = Math.floor(Math.random()*3);
