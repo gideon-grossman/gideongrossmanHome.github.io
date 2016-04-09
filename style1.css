@@ -1,12 +1,18 @@
 #drumkitImage {
-  width: 100px;
+  background: url("http://magicdrum.org.uk/drumkitlessons/pix/pearl-export.jpg") no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+body {
+  background-color: white;
 }
 
 .staff {
   visibility: hidden;
   position: relative;
   width: 30px;
-  bottom: 0px;
+  bottom: -200px;
 }
 
 .musicalNote {
