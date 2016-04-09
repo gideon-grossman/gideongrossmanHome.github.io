@@ -95,7 +95,7 @@ grow();
 */
 $("#drumkitImage").hide().show("slow");
 $("#title").click(function(){
-	$("#title").append("<div>Hello!</div>");
+	$(this).append("<div>Hello!</div>");
 	});
 	
 //generates a random integer
