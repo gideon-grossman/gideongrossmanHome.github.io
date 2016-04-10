@@ -118,3 +118,8 @@ var whichDrum = function() {
     return "none";
   }
 };
+
+var zazate = require('zazate.js');
+var result = zazate.notes.augment('C');
+console.log(result); // print 'C#'
+
