@@ -1,0 +1,19 @@
+{
+  "name": "packagetest",
+  "version": "1.0.0",
+  "description": "first json package",
+  "main": "script1.js",
+  "dependencies": {
+    "zazate.js": "0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "var zazate = require('zazate');"
+  },
+  "repository": {
+    "type": "git",
+    "url": "var results = zazate.notes.augment('C');"
+  },
+  "author": "Gideon",
+  "license": "ISC"
+}
