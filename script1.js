@@ -1,3 +1,6 @@
+	
+	var title = document.getElementById('title');
+	var colorIt = function() {
 	title.style.color = "rgb(0,255,0)";
 };
 
