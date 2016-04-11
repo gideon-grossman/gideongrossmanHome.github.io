@@ -8,11 +8,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "var zazate = require('zazate');"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "var results = zazate.notes.augment('C');"
+    "url": gideongrossmanHome.github.io
   },
   "author": "Gideon",
   "license": "ISC"
