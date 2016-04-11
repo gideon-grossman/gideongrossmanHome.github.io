@@ -1,7 +1,3 @@
-//Title of page change color
-var title = document.getElementById("title");
-console.log("title = " + title.innerHTML);
-var colorIt = function() {
 	title.style.color = "rgb(0,255,0)";
 };
 
@@ -120,6 +116,5 @@ var whichDrum = function() {
 };
 
 var zazate = require('zazate.js');
-var result = zazate.notes.augment('C');
-console.log(result); // print 'C#'
-
+var results = zazate.notes.augment('C');
+console.log(results); //Print 'C#'
