@@ -4,7 +4,8 @@
   "description": "first json package",
   "main": "script1.js",
   "dependencies": {
-    "zazate.js": "0.0.0"
+    "lodash": "^4.9.0",
+    "music-chord": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
