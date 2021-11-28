@@ -4711,3 +4711,14 @@ input, select, textarea {
 		grid-template-columns: auto auto auto auto auto auto;
 		padding: 10px;
 	}
+	.client-review {
+		font-size: 0.8rem;
+		text-align: left;
+		background-color: #ddd;
+		margin: 10px;
+		border-radius: 5px;
+		padding: 5px;
+	}
+	.client {
+		font-weight: bold;
+	}
