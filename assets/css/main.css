@@ -2637,7 +2637,6 @@ input, select, textarea {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
-			height: 50rem;
 		}
 
 			.image.main:first-child {
@@ -4688,4 +4687,27 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+	.about-me-section {
+		display: grid;
+		grid-column-gap: 50px;
+		grid-template-columns: auto auto auto;
+		padding: 10px;
+	}
+	.about-item {
+		background-color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+	}
+	.company-logo {
+		width: 8rem;
+	}
+	.company-logo:hover {
+		border-style: outset;
+		border-width: 10px;
+	}
+	.company-logos {
+		display: grid;
+		grid-column-gap: 1px;
+		grid-template-columns: auto auto auto auto auto auto;
+		padding: 10px;
 	}
