@@ -4690,26 +4690,37 @@ input, select, textarea {
 	}
 	.about-me-section {
 		display: grid;
-		grid-column-gap: 50px;
+		/* grid-column-gap: 50px; */
 		grid-template-columns: auto auto auto;
-		padding: 10px;
+		background-color: #545556;
+		padding: 1rem;
+
 	}
 	.about-item {
 		background-color: rgba(255, 255, 255, 0.8);
 		text-align: center;
+		background-color: #545556;
+		padding: 0.5rem;
+
+	}
+	.about-verbiage {
+		text-align: left;
+		background-color: #545556;
+		color: white;
+		padding: 1rem;
 	}
 	.company-logo {
 		width: 8rem;
 	}
 	.company-logo:hover {
 		border-style: outset;
-		border-width: 10px;
+		border-width: 0.5rem;
 	}
 	.company-logos {
-		display: grid;
-		grid-column-gap: 1px;
+		display: inline;
+		/* grid-column-gap: 10px; */
 		grid-template-columns: auto auto auto auto auto auto;
-		padding: 10px;
+		padding: 1rem;
 	}
 	.client-review {
 		font-size: 0.8rem;
@@ -4717,7 +4728,8 @@ input, select, textarea {
 		background-color: #ddd;
 		margin: 10px;
 		border-radius: 5px;
-		padding: 5px;
+		padding: 1rem;
+		border: 0.5rem solid	#545556;
 	}
 	.client {
 		font-weight: bold;
