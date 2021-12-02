@@ -4711,16 +4711,17 @@ input, select, textarea {
 	}
 	.company-logo {
 		width: 8rem;
+		height: 8rem;
 	}
 	.company-logo:hover {
 		border-style: outset;
-		border-width: 10px;
+		border-width: 0.5rem;
 	}
 	.company-logos {
-		display: grid;
+		display: inline;
 		grid-column-gap: 1px;
 		grid-template-columns: auto auto auto auto auto auto;
-		padding: 10px;
+		padding: 1rem;
 	}
 	.client-review {
 		font-size: 0.8rem;
@@ -4728,7 +4729,7 @@ input, select, textarea {
 		background-color: #ddd;
 		margin: 10px;
 		border-radius: 5px;
-		padding: 5px;
+		padding: 1rem;
 		border: 0.5rem solid	#545556;
 	}
 	.client {
